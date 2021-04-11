@@ -3,17 +3,20 @@ description: Theme context.
 labels: ['context']
 ---
 
-import { ThemeProvider } from './theme-provider';
+import { MockComponent } from './theme-context.compositions';
+import { ThemeContext } from './theme-context';
+import { ThemeProvider } from './theme-context-provider';
 
 A theme context.
 
-```tsx
+```tsx live
 () => {
   return (
     <ThemeProvider color="red">
-      
+      <MockComponent />
     </ThemeProvider>
   );
-}
+};
 ```
 
+<!-- @ran this doesn't render how it should -->

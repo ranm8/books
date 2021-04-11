@@ -1,7 +1,8 @@
 import React from 'react';
-import { useBooks } from '@deepblue/scopes.ui.hooks.use-books';
-import { ThemeProvider } from '@deepblue/scopes.ui.theme-context';
-import { Book } from '@deepblue/scopes.ui.book';
+
+import { useBooks } from '@books-demo/ui.use-books';
+import { ThemeProvider } from '@books-demo/ui.theme-context';
+import { Book } from '@books-demo/ui.book';
 
 export function BookList() {
   const books = useBooks();
@@ -10,7 +11,9 @@ export function BookList() {
 
   return (
     <ThemeProvider color="blue">
-      {books.map((book) => <Book book={book}></Book>)}
+      {books.map((book) => (
+        <Book book={book}></Book>
+      ))}
     </ThemeProvider>
   );
 }
