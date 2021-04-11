@@ -1,21 +1,23 @@
 ---
-labels: ['react', 'typescript', 'slide']
-description: 'A Slide component.'
+labels: ['react', 'typescript', 'book']
+description: 'A Book component.'
 ---
 
-import { Slide } from './slide';
+import { Book } from './book';
+import { mockBook } from '@books-demo/book';
 
-Slide example:
+Book example:
 
-A simple Slide component with some text
+A simple Book component with some text
 
 Code Snippet:
+
 ```js
-<Slide>hello from Slide</Slide>
+<Book book={mockBook()} />
 ```
 
-
 Live Playground:
+
 ```js live
-<Slide>hello from Slide</Slide>
+<Book book={mockBook()} />
 ```

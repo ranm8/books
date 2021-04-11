@@ -1,11 +1,12 @@
-import React, { ReactNode } from 'react';
-import { Book as BookModel } from '@deepblue/scopes.models.scope.book';
+import React from 'react';
+// import { Book as BookModel } from '@deepblue/scopes.models.scope.book';
+import { Book as BookModel } from '@books-demo/book';
 
 export type BookProps = {
   /**
    * a text to be rendered in the component.
    */
-  book: BookModel
+  book: BookModel;
 };
 
 export function Book({ book }: BookProps) {
@@ -14,4 +15,4 @@ export function Book({ book }: BookProps) {
       {book.name} (Title size is {book.getTitleSize()})
     </div>
   );
-};
+}
